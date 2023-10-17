@@ -13,7 +13,7 @@ YouTube Audio Downloader is a simple web application built with Flask that allow
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/yt-audio-downloader.git
+   git clone https://github.com/mochiron-desu/yt-music-downloader
    ```
 
 2. Navigate to the project directory:
