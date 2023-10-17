@@ -19,7 +19,7 @@ YouTube Audio Downloader is a simple web application built with Flask that allow
 2. Navigate to the project directory:
 
    ```bash
-   cd yt-audio-downloader
+   cd yt-music-downloader
    ```
 
 3. Create a virtual environment (recommended) and activate it:
