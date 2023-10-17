@@ -21,16 +21,15 @@ def download_audio():
         video = yt.streams.filter(only_audio=True).first()
 
         # Download the file
-        out_file = video.download(output_path="downloads")
+        download_path = "downloads"
+        out_file = video.download(output_path=download_path)
 
 
         # Rename and send the file for download
         base, ext = os.path.splitext(out_file)
-        new_file = base + ".mp3"
+        new_file = f"{base}.mp3"
         os.rename(out_file,new_file)
-        return send_file(new_file, as_attachment=True)
-    
-        
+        return send_file(new_file, as_attachment=True, mimetype="audio/mpeg")
 
     return render_template('index.html')
 
