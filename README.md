@@ -51,7 +51,7 @@ YouTube Audio Downloader is a simple web application built with Flask that allow
 
 ## Screenshots
 
-![Screenshot](screenshot\img1.png)
+![Screenshot](https://github.com/mochiron-desu/yt-music-downloader/blob/main/screenshot/img1.png?raw=true)
 
 ## License
 
