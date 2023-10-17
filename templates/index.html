@@ -2,12 +2,11 @@
 <html>
 
 <head>
-    <title>My Flask App</title>
+    <title>YouTube Audio Downloader</title>
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='favicon-32x32.png') }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='site.webmanifest') }}">
-    <title>YouTube Audio Downloader</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,6 +52,14 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        /* Centered GitHub icon at the bottom */
+        .github-icon {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     </style>
 </head>
 
@@ -65,6 +72,10 @@
         <br>
         <input type="submit" value="Download">
     </form>
+    <!-- GitHub icon and link -->
+    <a class="github-icon" href="https://github.com/mochiron-desu/yt-music-downloader">
+        <img src="{{ url_for('static', filename='github-mark.png') }}" alt="GitHub Icon" width="32" height="32">
+    </a>
 </body>
 
 </html>
