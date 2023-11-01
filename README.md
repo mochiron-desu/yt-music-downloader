@@ -8,6 +8,7 @@ Live Website: [Here](https://link-shortner.mochirondesu.repl.co/lXigqK) (Deploye
 
 - Download audio from YouTube videos by providing a URL.
 - Supports multiple audio quality options (depends on the availability of the source video).
+- Supports playlist download.
 - Provides the downloaded audio as an MP3 file for easy offline listening.
 
 ## Installation
