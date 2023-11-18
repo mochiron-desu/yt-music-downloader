@@ -41,7 +41,7 @@ def download_audio():
                 audioStream = video.streams.filter(only_audio=True).first()
                 title = re.sub(r'[\/:*?"<>|]', '', video.title)
                 outfile = audioStream.download(output_path = download_path)
-                new_file = os.path.join(download_path, f"{title}.mp3")
+                new_file = os.path.join(download_path, f"{title}.wav")
                 os.rename(outfile, new_file)
                 downloaded_files.append(new_file)
             print("Downloaded")
@@ -67,9 +67,10 @@ def download_audio():
 
             # Rename and send the file for download
             base, ext = os.path.splitext(out_file)
-            new_file = f"{base}.mp3"
+            new_file = f"{base}.wav"
             os.rename(out_file,new_file)
-            return send_file(new_file, as_attachment=True, mimetype="audio/mpeg")
+            
+            return send_file(new_file, as_attachment=True, mimetype="audio/wav")
 
     return render_template('index.html')
 
